@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  align-items: center;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Jaro';
+  src: url(Jaro-Regular-VariableFont_opsz.ttf) format('truetype');
+}
+
+.clock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  border: none;
+  padding: 5rem;
+}
+
+.oval {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(4, 170, 4, 0.422);
+  border-radius: 50%;
+  filter: blur(5rem);
+}
+
+p {
+  margin: 0;
+  color: rgb(4, 170, 4);
+  font-family: 'Jaro';
+  z-index: 10;
+}
+
+.time {
+  font-size: 5rem;
+  letter-spacing: 1.5rem;
+}
+
+.day-month {
+  font-size: 1rem;
+}
